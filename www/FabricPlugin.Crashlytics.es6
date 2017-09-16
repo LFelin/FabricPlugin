@@ -8,8 +8,9 @@ class FabricCrashlytics {
         ]);
     }
 
-    sendCrash() {
+    sendCrash(message) {
         window.fabric.core.execPlugin('sendCrash', [
+            message
         ]);
     }
 

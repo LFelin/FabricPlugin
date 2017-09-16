@@ -16,8 +16,8 @@ var FabricCrashlytics = (function () {
         }
     }, {
         key: 'sendCrash',
-        value: function sendCrash() {
-            window.fabric.core.execPlugin('sendCrash', []);
+        value: function sendCrash(message) {
+            window.fabric.core.execPlugin('sendCrash', [message]);
         }
     }, {
         key: 'sendNonFatalCrash',

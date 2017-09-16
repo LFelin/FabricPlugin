@@ -117,7 +117,8 @@ public class FabricPlugin extends CordovaPlugin {
 		this.cordova.getActivity().runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				throw new RuntimeException("This is a crash");
+				String message = data.optString(0);
+				throw new RuntimeException(message);
 			}
 		});
 	}
